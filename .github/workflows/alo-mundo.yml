@@ -1,0 +1,18 @@
+name: Alô Mundo
+
+# Define o evento que dispara o workflow
+on:
+  # Dispara o workflow manualmente
+  workflow_dispatch:
+
+# Define os jobs a serem executados
+jobs:
+  # Define o job alo
+  alo:
+    # Define o ambiente de execução
+    runs-on: ubuntu-latest
+
+    # Define os passos a serem executados
+    steps:
+    - name: Ecoar Alô Mundo
+      run: echo "Alô Mundo"
